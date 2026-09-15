@@ -1,0 +1,9 @@
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Pastas de origem/rascunho que você pode usar localmente
+# antes de converter e organizar as imagens (não sobem pro repo)
+_originais/
+_staging/
+*.tmp

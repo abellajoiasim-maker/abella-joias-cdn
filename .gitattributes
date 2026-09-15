@@ -1,0 +1,14 @@
+# Trata todos os formatos de imagem como binário puro.
+# Isso evita que o Git tente "normalizar" quebras de linha dentro do arquivo
+# (o que corromperia a imagem) e acelera operações de diff/merge.
+*.webp binary
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.gif  binary
+*.svg  binary
+
+# NÃO usar Git LFS aqui.
+# O jsDelivr NÃO consegue servir arquivos que estão armazenados via Git LFS
+# (ele lê o conteúdo bruto do repositório, e arquivos LFS são apenas ponteiros
+# de texto). Se o Git LFS for ativado neste repo, os links de CDN vão quebrar.
